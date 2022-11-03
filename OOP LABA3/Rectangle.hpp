@@ -129,6 +129,8 @@ Rectangle<T>& Rectangle<T>::operator++()
     return *this;
 }
 
+//Prefix deccrement
+
 template <class T>
 Rectangle<T>& Rectangle<T>::operator--()
 {
@@ -136,7 +138,7 @@ Rectangle<T>& Rectangle<T>::operator--()
     return *this;
 }
 
-//Prefix increment
+//Postfix increment
 
 template <class T>
 Rectangle<T> Rectangle<T>::operator++(int)
@@ -144,7 +146,7 @@ Rectangle<T> Rectangle<T>::operator++(int)
     return Rectangle(a++, b++);
 }
 
-
+//Postfix deccrement
 
 template <class T>
 Rectangle<T> Rectangle<T>::operator--(int)
